@@ -1,0 +1,1299 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap&quot");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
+    background-image: url(/bg-sintesa.png);
+    background-color: var(--yellow-bg);
+}
+
+:root {
+    --green-primary: #93b53d;
+    --yellow: #ffe47c;
+    --green-light: #e4ffa0;
+    --green-old: #deff8c;
+    --blue-egg: #06b1c7;
+    --blue-egg-2: #6ec1e4;
+    --grey: #f3ffff;
+    --blue-light: #e6ffff;
+    --green-button: #61ce70;
+    --red-primary: #d74028;
+    --red-bg: #fff1ef;
+    --red-light: #ffdfda;
+    --yellow-old: #f2c010;
+    --yellow-bg: #fffac3;
+    --yellow-header: #fffde6;
+    --white: #ffffff;
+
+    --text-heading: clamp(1.25rem, 1.25rem + 2.0833vw, 3.125rem);
+    --text-sub-heading: clamp(1.125rem, 1.125rem + 1.25vw, 2.25rem);
+    --text-title: clamp(0.875rem, 0.875rem + 0.1389vw, 1rem);
+    --text-para: clamp(0.875rem, 0.875rem + 0.2778vw, 1.125rem);
+    --text-span: clamp(0.75rem, 0.75rem + 0.1389vw, 0.875rem);
+}
+
+/* ===== Tampilan Mobile ===== */
+.container {
+    padding: 0px 20px;
+}
+
+.ri-check-line {
+    font-weight: 900;
+    color: var(--blue-egg-2);
+    font-size: 21px;
+}
+
+.wrap > p {
+    display: none;
+}
+
+.pendaftaran {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--green-primary);
+    color: var(--grey);
+    padding: 20px;
+}
+
+.pendaftaran > h1 {
+    font-size: var(--text-sub-heading);
+}
+
+.pendaftaran .burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    animation-name: burger-menu;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes burger-menu {
+    /* from {background-color: red;}
+    to {background-color: var(--green-primary);} */
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:aqua; left:0px; top:200px;}
+    100% {background-color:var(--green-primary); left:0px; top:0px;}
+}
+  
+
+.pendaftaran .burger-menu > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+
+.hero-adsense {
+    background-color: var(--white);
+    margin-top: 25px;
+}
+
+
+
+
+/* Hero */
+.hero {
+    padding: 10px ;
+}
+
+.hero .container {
+    background-color: var(--yellow);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .container > p:nth-child(1) {
+    font-size: var(--text-heading);
+}
+
+.hero .container > h1 {
+    font-size: var(--text-heading);
+    font-weight: 1000;
+    font-size: 38px;
+}
+
+.hero .container > p:nth-child(4) {
+    font-size: var(--text-sub-heading);
+}
+
+
+
+
+/* Section-satu */
+.section-satu {
+    padding: 10px;
+    /* background-color: #61ce70; */
+}
+
+.section-satu .container {
+    /* background-color: brown; */
+    padding: 0px 0px;
+}
+
+.section-satu .container > h1 {
+    background-color: var(--green-primary);
+    padding: 10px 25px;
+    font-size: var(--text-heading);
+    color: var(--grey);
+}
+
+.section-satu .container .syarat {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green-old);
+    padding: 30px 25px 30px 25px;
+    gap: 20px;
+}
+
+.section-satu .container .syarat > h3 {
+    color: var(--blue-egg-2);
+    font-size: var(--text-sub-heading);
+}
+
+.section-satu .container .syarat .syarat-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-satu .container .syarat .syarat-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.section-satu .container .syarat .syarat-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+.section-satu .container .syarat .teks hr {
+    text-decoration: dotted;
+}
+
+.section-satu .container .yang-perlu-dibawa {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green-old);
+    padding: 30px 25px 30px 25px;
+    gap: 20px;
+}
+
+.section-satu .container .yang-perlu-dibawa > h3 {
+    color: var(--blue-egg-2);
+    font-size: var(--text-sub-heading);
+}
+
+.section-satu .container .yang-perlu-dibawa .yang-perlu-dibawa-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-satu .container .yang-perlu-dibawa .yang-perlu-dibawa-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.section-satu .container .yang-perlu-dibawa .yang-perlu-dibawa-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+.section-satu .container .yang-perlu-dibawa .teks hr {
+    text-decoration: dotted;
+}
+
+/* Beginner */
+.beginner {
+    padding: 10px;
+}
+
+.beginner .container {
+    border: 1px solid var(--blue-egg);
+    padding: 0px;
+}
+
+.beginner .container > h1 {
+    color: var(--grey);
+    background-color: var(--blue-egg);
+    font-size: var(--text-heading);
+    padding: 10px 25px;
+}
+
+.beginner .container .beginner-satu {
+    background-color: var(--grey);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beginner .container .beginner-satu > p {
+    font-size: var(--text-para);
+    width: 80%;
+}
+
+.beginner .container .beginner-satu > h4 {
+    font-size: var(--text-para);
+}
+
+.beginner .container .beginner-satu > ol {
+    padding: 0px 47px;
+    font-size: var(--text-para);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+
+
+
+
+
+
+.beginner .container .beginner-dua {
+    background-color: orange;
+}
+
+.beginner .container .beginner-dua .how-to-basic {
+    background-color: var(--blue-light);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beginner .container .beginner-dua .how-to-basic > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.beginner .container .beginner-dua .how-to-basic > p {
+    font-size: var(--text-para);
+}
+
+.beginner .container .beginner-dua .how-to-basic .how-to-basic-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.beginner .container .beginner-dua .how-to-basic .how-to-basic-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.beginner .container .beginner-dua .how-to-basic .how-to-basic-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+.beginner .container .beginner-dua .building {
+    background-color: var(--blue-light);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beginner .container .beginner-dua .building > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.beginner .container .beginner-dua .building > p {
+    font-size: var(--text-para);
+}
+
+.beginner .container .beginner-dua .building .building-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.beginner .container .beginner-dua .building .building-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.beginner .container .beginner-dua .building .building-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+
+
+
+
+
+.beginner .container .beginner-tiga .product {
+    background-color: var(--blue-light);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beginner .container .beginner-tiga .product > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.beginner .container .beginner-tiga .product > p {
+    font-size: var(--text-para);
+}
+
+.beginner .container .beginner-tiga .product .product-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.beginner .container .beginner-tiga .product .product-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.beginner .container .beginner-tiga .product .product-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+.beginner .container .beginner-tiga .social-media {
+    background-color: var(--blue-light);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beginner .container .beginner-tiga .social-media > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.beginner .container .beginner-tiga .social-media > p {
+    font-size: var(--text-para);
+}
+
+.beginner .container .beginner-tiga .social-media .social-media-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.beginner .container .beginner-tiga .social-media .social-media-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.beginner .container .beginner-tiga .social-media .social-media-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+
+.beginner .container .daftar-beginner {
+    background-color: var(--grey);
+    padding: 30px 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beginner .container .daftar-beginner > a {
+    font-size: var(--text-para);
+    text-decoration: none;
+    background-color: var(--green-button);
+    color: var(--grey);
+    padding: 15px 15px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+/* Digital Growth */
+.digital-growth {
+    padding: 10px;
+}
+
+.digital-growth .container {
+    padding: 0px;
+    border: 1px solid var(--red-primary);
+}
+
+.digital-growth .container > h1 {
+    color: var(--grey);
+    background-color: var(--red-primary);
+    font-size: var(--text-heading);
+    padding: 10px 25px;
+}
+
+.digital-growth .container .digital-growth-satu {
+    background-color: var(--red-bg);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.digital-growth .container .digital-growth-satu > p {
+    font-size: var(--text-para);
+    width: 80%;
+}
+
+.digital-growth .container .digital-growth-satu > h4 {
+    font-size: var(--text-para);
+}
+
+.digital-growth .container .digital-growth-satu > ol {
+    padding: 0px 47px;
+    font-size: var(--text-para);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+
+
+
+
+.digital-growth .container .digital-growth-dua .facebook {
+    background-color: var(--red-light);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.digital-growth .container .digital-growth-dua .facebook > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.digital-growth .container .digital-growth-dua .facebook > p {
+    font-size: var(--text-para);
+}
+
+.digital-growth .container .digital-growth-dua .facebook .facebook-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.digital-growth .container .digital-growth-dua .facebook .facebook-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.digital-growth .container .digital-growth-dua .facebook .facebook-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+
+
+.digital-growth .container .digital-growth-dua .google {
+    background-color: var(--red-light);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.digital-growth .container .digital-growth-dua .google > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.digital-growth .container .digital-growth-dua .google > p {
+    font-size: var(--text-para);
+}
+
+.digital-growth .container .digital-growth-dua .google .google-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.digital-growth .container .digital-growth-dua .google .google-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.digital-growth .container .digital-growth-dua .google .google-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+
+
+
+.digital-growth .container .digital-growth-tiga .platforms {
+    background-color: var(--red-light);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.digital-growth .container .digital-growth-tiga .platforms > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.digital-growth .container .digital-growth-tiga .platforms > p {
+    font-size: var(--text-para);
+}
+
+.digital-growth .container .digital-growth-tiga .platforms .platforms-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.digital-growth .container .digital-growth-tiga .platforms .platforms-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.digital-growth .container .digital-growth-tiga .platforms .platforms-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+
+.digital-growth .container .digital-growth-tiga .marketing {
+    background-color: var(--red-light);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.digital-growth .container .digital-growth-tiga .marketing > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.digital-growth .container .digital-growth-tiga .marketing > p {
+    font-size: var(--text-para);
+}
+
+.digital-growth .container .digital-growth-tiga .marketing .marketing-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.digital-growth .container .digital-growth-tiga .marketing .marketing-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.digital-growth .container .digital-growth-tiga .marketing .marketing-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+.digital-growth .container .daftar-digital {
+    background-color: var(--red-bg);
+    padding: 30px 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.digital-growth .container .daftar-digital > a {
+    font-size: var(--text-para);
+    text-decoration: none;
+    background-color: var(--green-button);
+    color: var(--grey);
+    padding: 15px 15px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* AdSense Universe */
+.adsense-universe {
+    padding: 10px;
+}
+
+.adsense-universe .container {
+    /* background-color: #6ec1e4; */
+    padding: 0px;
+    border: 1px solid var(--yellow-old);
+}
+
+.adsense-universe .container > h1 {
+    color: var(--grey);
+    background-color: var(--yellow-old);
+    font-size: var(--text-heading);
+    padding: 10px 25px;
+}
+
+
+
+
+
+.adsense-universe .container .adsense-satu {
+    background-color: var(--yellow-header);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adsense-universe .container .adsense-satu > p {
+    font-size: var(--text-para);
+    width: 80%;
+}
+
+.adsense-universe .container .adsense-satu > h4 {
+    font-size: var(--text-para);
+}
+
+.adsense-universe .container .adsense-satu > ol {
+    padding: 0px 47px;
+    font-size: var(--text-para);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+
+
+
+
+
+
+
+.adsense-universe .container .adsense-dua .arbitrage {
+    background-color: var(--yellow-bg);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adsense-universe .container .adsense-dua .arbitrage > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.adsense-universe .container .adsense-dua .arbitrage > p {
+    font-size: var(--text-para);
+}
+
+.adsense-universe .container .adsense-dua .arbitrage .arbitrage-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.adsense-universe .container .adsense-dua .arbitrage .arbitrage-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.adsense-universe .container .adsense-dua .arbitrage .arbitrage-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+.adsense-universe .container .adsense-dua .niche {
+    background-color: var(--yellow-bg);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adsense-universe .container .adsense-dua .niche > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.adsense-universe .container .adsense-dua .niche > p {
+    font-size: var(--text-para);
+}
+
+.adsense-universe .container .adsense-dua .niche .niche-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.adsense-universe .container .adsense-dua .niche .niche-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.adsense-universe .container .adsense-dua .niche .niche-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+.adsense-universe .container .adsense-tiga .traffic {
+    background-color: var(--yellow-bg);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adsense-universe .container .adsense-tiga .traffic > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.adsense-universe .container .adsense-tiga .traffic > p {
+    font-size: var(--text-para);
+}
+
+.adsense-universe .container .adsense-tiga .traffic .traffic-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.adsense-universe .container .adsense-tiga .traffic .traffic-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.adsense-universe .container .adsense-tiga .traffic .traffic-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+
+
+.adsense-universe .container .adsense-tiga .earn {
+    background-color: var(--yellow-bg);
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adsense-universe .container .adsense-tiga .earn > h3 {
+    font-size: var(--text-heading);
+    font-weight: 900;
+    color: var(--blue-egg-2);
+}
+
+.adsense-universe .container .adsense-tiga .earn > p {
+    font-size: var(--text-para);
+}
+
+.adsense-universe .container .adsense-tiga .earn .earn-lagi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.adsense-universe .container .adsense-tiga .earn .earn-lagi .teks {
+    display: flex;
+    gap: 15px;
+}
+
+.adsense-universe .container .adsense-tiga .earn .earn-lagi .teks > p {
+    font-size: var(--text-para);
+}
+
+
+
+
+.adsense-universe .container .adsense-selengkapnya {
+    background-color: var(--yellow-header);
+    padding: 30px 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.adsense-universe .container .adsense-selengkapnya  a {
+    font-size: var(--text-para);
+    text-decoration: none;
+    background-color: var(--green-button);
+    color: var(--grey);
+    padding: 15px 15px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+.footer {
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.footer .container {
+    /* background-color: #61ce70; */
+    padding: 30px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .container .alamat {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer .container .alamat > h6 {
+    font-size: var(--text-sub-heading);
+}
+
+.footer .container .alamat .teks {
+    font-size: var(--text-para);
+}
+
+.footer .container .alamat .map {
+    font-size: var(--text-para);
+}
+
+.footer .container .alamat a {
+    text-decoration: none;
+    color: var(--green-primary);
+}
+
+.footer .container .hubungi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer .container .hubungi h6 {
+    font-size: var(--text-sub-heading);
+}
+
+.footer .container .hubungi .kontak {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: var(--text-para);
+}
+
+.footer .container .hubungi .kontak a {
+    text-decoration: none;
+    color: var(--green-primary);
+}
+
+.footer .container .gabung {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.footer .container .gabung h6 {
+    font-size: var(--text-sub-heading);
+}
+
+.footer .container .gabung .school {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer .container .gabung .school a {
+    text-decoration: none;
+    font-size: var(--text-para);
+    color: var(--green-primary);
+}
+
+
+
+
+
+
+footer .container {
+    padding: 30px 70px 90px 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .container a {
+    text-decoration: none;
+    color: var(--green-primary);
+}
+
+
+
+
+
+
+
+/* ===== Tampilan iPad - Laptop - Desktop ===== */
+@media (min-width: 768px) {
+    .container {
+        padding: 0px 96px;
+    }
+
+    body {
+        justify-content: center;
+        display: flex;
+    }
+
+    .wrap {
+        /* background-color: #6ec1e4; */
+        margin: 50px 70px 30px 70px;
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pendaftaran {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    .pendaftaran h1 {
+        color: black;
+        font-size: var(--text-heading);
+    }
+
+    .pendaftaran .burger-menu {
+        display: none;
+    }
+
+
+    .wrap > p {
+        color: var(--white);
+        background-color: var(--green-primary);
+        font-size: var(--text-para);
+        margin-top: 10px;
+        padding: 20px 10px;
+        text-align: center;
+        display: block;
+        font-weight: 900;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero .container > p:nth-child(1) {
+        font-size: var(--text-sub-heading);
+    }
+    
+    .hero .container > h1 {
+        font-size: var(--text-heading);
+        font-weight: 1000;
+        font-size: 38px;
+    }
+    
+    .hero .container > p:nth-child(4) {
+        font-size: var(--text-para);
+    }
+
+
+    
+
+    /* Section Satu */
+    .section-satu {
+        padding: 20px;
+    }
+
+    .section-satu hr {
+        display: none;
+    }
+
+    .syarat-yang-perlu-dibawa {
+        display: flex;
+        width: 100%;
+    }
+
+    .section-satu .container .syarat {
+        width: 50%;
+    }
+
+    .section-satu .container .yang-perlu-dibawa {
+        width: 50%;
+        background-color: var(--green-light);
+    }
+
+
+
+
+    /* Beginner */
+    .beginner {
+        padding: 20px;
+    }
+
+
+
+    .beginner .container .beginner-dua {
+        display: flex;
+    }
+    
+    .beginner .container .beginner-dua > hr {
+        display: none;
+    }
+
+    .beginner .container .beginner-dua .how-to-basic {
+        width: 50%;
+    }
+
+    .beginner .container .beginner-dua .building {
+        width: 50%;
+    }
+
+
+
+
+
+    .beginner .container .beginner-tiga {
+        display: flex;
+    }
+
+    .beginner .container .beginner-tiga > hr {
+        display: none;
+    }
+
+    .beginner .container .beginner-tiga .product {
+        width: 50%;
+    }
+
+    .beginner .container .beginner-tiga .social-media {
+        width: 50%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* Digital Growth */
+    .digital-growth {
+        padding: 20px;
+    }
+
+
+
+    .digital-growth .container .digital-growth-dua {
+        display: flex;
+    }
+
+    .digital-growth .container .digital-growth-dua > hr {
+        display: none;
+    }
+
+    .digital-growth .container .digital-growth-dua .facebook {
+        width: 50%;
+    }
+
+    .digital-growth .container .digital-growth-dua .google {
+        width: 50%;
+    }
+
+
+
+
+    .digital-growth .container .digital-growth-tiga {
+        display: flex;
+    }
+
+    .digital-growth .container .digital-growth-tiga > hr {
+        display: none;
+    }
+
+    .digital-growth .container .digital-growth-tiga .platforms {
+        width: 50%;
+    }
+
+    .digital-growth .container .digital-growth-tiga .marketing {
+        width: 50%;
+    }
+
+
+
+
+    .adsense-universe {
+        padding: 20px;
+    }
+
+
+
+
+    .adsense-universe .container .adsense-dua {
+        display: flex;
+    }
+
+    .adsense-universe .container .adsense-dua > hr {
+        display: none;
+    }
+
+    .adsense-universe .container .adsense-dua .arbitrage {
+        width: 50%;
+    }
+
+    .adsense-universe .container .adsense-dua .niche {
+        width: 50%;
+    }
+
+
+
+
+    .adsense-universe .container .adsense-tiga {
+        display: flex;
+    }
+
+    .adsense-universe .container .adsense-tiga > hr {
+        display: none;
+    }
+
+    .adsense-universe .container .adsense-tiga .traffic {
+        width: 50%;
+    }
+
+    .adsense-universe .container .adsense-tiga .earn {
+        width: 50%;
+    }
+
+
+
+
+    .footer {
+        margin-top: 25px;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .footer .container .alamat {
+        width: 30%;
+       
+    }
+
+    .footer .container .hubungi {
+        width: 30%;
+        
+        
+    }
+
+    .footer .container .gabung {
+        width: 30%;
+    }
+
+
+
+
+
+    footer {
+        /* background-color: var(--yellow-old); */
+        margin-top: 10px;
+    }
+    
+
+}
+
+
