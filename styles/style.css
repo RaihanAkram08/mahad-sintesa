@@ -7,10 +7,8 @@
 }
 
 body {
-    font-family: "Manrope", sans-serif;
-    /* font-family: 'Segoe UI', Tahoma, sans-serif; */
-    /* font-family: "Open Sans", sans-serif; */
-    background-image: url(/bg-sintesa.png);
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url(./assets/bg-sintesa.png);
     background-color: var(--yellow-bg);
 }
 
@@ -78,17 +76,6 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
-@keyframes burger-menu {
-    /* from {background-color: red;}
-    to {background-color: var(--green-primary);} */
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:aqua; left:0px; top:200px;}
-    100% {background-color:var(--green-primary); left:0px; top:0px;}
-}
-  
 
 .pendaftaran .burger-menu > p {
     font-size: var(--text-para);
