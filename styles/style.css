@@ -9,7 +9,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     background-image: url(./assets/bg-sintesa.png);
-    background-color: var(--yellow-bg);
+    background-color: var(--green-light);
 }
 
 :root {
